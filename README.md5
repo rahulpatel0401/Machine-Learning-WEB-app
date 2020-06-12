@@ -1,0 +1,6 @@
+To run this project:
+
+1. You need to have some libraries in your environment. Run the following code
+  in command prompt or in anaconda prompt.
+
+  <code> pip install matplotlib </code>

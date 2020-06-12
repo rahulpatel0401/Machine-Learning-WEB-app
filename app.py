@@ -9,6 +9,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import plot_confusion_matrix, plot_roc_curve, plot_precision_recall_curve
 from sklearn.metrics import precision_score, recall_score
 
+file_location = (r"location_of_the file_in_your_pc\mushrooms.csv")
+
 def main():
     st.title("Binary Classification Web App")
     st.sidebar.title("Binary Classification Web App")
@@ -17,7 +19,7 @@ def main():
 
     @st.cache(persist=True)
     def load_data():
-        data = pd.read_csv(r"c:\Users\RAHUL\Documents\Machine Learning WEB-app\mushrooms.csv")
+        data = pd.read_csv(file_location)
         label = LabelEncoder()
         for col in data.columns:
             data[col] = label.fit_transform(data[col])
