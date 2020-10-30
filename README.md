@@ -15,6 +15,6 @@
 
 ## 3. Now run the app.py
  - you can also use following command in your command prompt to run app.py. First set the current directory of your command prompt to the folder where you saved app.py, then run the following command.
-    ```
-    streamlit run app.py
-    ```
+  ```
+  streamlit run app.py
+  ```
